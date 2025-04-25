@@ -85,7 +85,6 @@ const UserRegistration = () => {
         setAge('');
         setIsOnline(false);
         setPhoto('');
-
         navigate('/');
     };
 

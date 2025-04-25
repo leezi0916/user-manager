@@ -11,6 +11,7 @@ const Container = styled.div`
     justify-content: center;
     background-color: #f0f4f8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 `
 
 const UserContainer = styled.div`

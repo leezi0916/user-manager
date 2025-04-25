@@ -9,7 +9,7 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 45px;
+    justify-content: space-around;
     gap: 16px;
     border-radius: 15px;
 `
@@ -39,7 +39,6 @@ const UserList = () => {
   const { users } = useUser();
   const navigate = useNavigate();
 
-  
   return (
     <div>
       <InputContainer>
