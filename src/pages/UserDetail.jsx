@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom'
 import { useUser } from '../context/UserContext';
+import useUserStore from '../store/useUserStore';
 
 const Container = styled.div`
     height: 100vh;
@@ -80,7 +81,8 @@ const ActionButton = styled.button`
 
 
 const UserDetail = () => {
-    const { users, deleteUser } = useUser();  
+    // const { users, deleteUser } = useUser();  
+    const {users, deleteUser} = useUserStore();
     const { id } = useParams();
     const navigate = useNavigate();
     const user = users.find(user => user.id === parseInt(id));
